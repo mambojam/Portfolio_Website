@@ -26,16 +26,35 @@
   height: 90vh;
   border-radius: 0 !important;
   background-color: transparent !important;
+  justify-content: center !important;
 }
 .masthead .ui.menu .ui.button,
 .ui.menu a.ui.inverted.button {
   margin-left: 0.5em;
 }
 
-.masthead h1.ui.header {
+.masthead h1.ui.header.pageHeader {
   font-size: 4em;
   font-weight: normal;
   color: #BFDBF7;
+  height: 10vh;
+  position: relative;
+  z-index: 1; /* Ensure content is above the pseudo-element */
+  padding: 20px;
+  font-size: 4em;
+  font-weight: normal;
+  color: #BFDBF7;
+}
+
+.pageHeader::before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  right: -20px;
+  bottom: 5px;
+  background-color: #FE364E;
+  z-index: -1; /* Place the background behind the content */
 }
 
 .masthead h2 {
@@ -50,7 +69,7 @@ div.refDiv {
 }
 
 .masthead h1.ui.header span.boldHeader {
-  color: #DB222A;
+  color: #FE364E;
 }
 div.ui.container.btnDiv {
   margin-top: 30vh !important;
@@ -63,13 +82,33 @@ div.ui.container.btnDiv button {
 }
 
 div.ui.container.btnDiv :hover {
-  filter: drop-shadow(10px 10px 4px #DB222A) !important;
+  filter: drop-shadow(10px 10px 4px #FE364E) !important;
   border: #1F7A8C;
   color:#1F7A8C;
 }
 
 i.icon.arrow.down:before {
   margin-left: 1vw !important;
+}
+
+.ui.grid>.row {
+  justify-content: center !important ;
+}
+
+p {
+  color: #d5e5f5;
+  font-size: large;
+}
+
+a {
+  color: #FE364E;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration:none;
 }
 
 /* div.image.logo img {

@@ -6,11 +6,11 @@ export default function About() {
    
     
         
-        <Grid inverted vertical className="masthead">
+        <Grid   className="masthead">
           <Grid.Row >
-          <Header as='h1' inverted>About</Header>
+          <Header as='h1'  className="pageHeader">About</Header>
           </Grid.Row>
-          <Grid.Column inverted width='6'>
+          <Grid.Column width='6'>
           
               <Icon inverted name='user' size='massive'/>
               <p style={{color:'white'}} >
@@ -24,41 +24,28 @@ export default function About() {
             
             
           </Grid.Column>
-          <Grid.Column width='10'>
-            
+          <Grid.Column width='10'>           
             <Container className='logo-container'>
-            <div className="logo-wrapper">
-            <img className="logo html" src="/stackLogos/HTML5.svg"/>
-
-            </div>
-            <div className="logo-wrapper">
-            <img className="logo net" src="/stackLogos/.NET.svg"/>
-
-            </div>
-            <div className="logo-wrapper">
-            <img className="logo cs" src="/stackLogos/C_Sharp.svg"/>
-
-            </div>
-            <div className="logo-wrapper">
-            <img className="logo react" src="/stackLogos/React.svg"/>
-
-            </div>
-            <div className="logo-wrapper">
-            <img className="logo css" src="/stackLogos/CSS3.svg"/>
-
-            </div>
-            <div className="logo-wrapper">
-            <img className="logo ts" src="/stackLogos/Typescript.svg"/>
-
-            </div>
-
-            </Container>
-             
-
-            
-          </Grid.Column>
-          
-    
+              <div className="logo-wrapper">
+                <img className="logo html" src="/stackLogos/HTML5.svg"/>
+              </div>
+              <div className="logo-wrapper">
+                <img className="logo net" src="/stackLogos/.NET.svg"/>
+              </div>
+              <div className="logo-wrapper">
+                <img className="logo cs" src="/stackLogos/C_Sharp.svg"/>
+              </div>
+              <div className="logo-wrapper">
+                <img className="logo react" src="/stackLogos/React.svg"/>
+              </div>
+              <div className="logo-wrapper">
+                <img className="logo css" src="/stackLogos/CSS3.svg"/>
+              </div>
+              <div className="logo-wrapper">
+                <img className="logo ts" src="/stackLogos/Typescript.svg"/>
+              </div>
+            </Container>      
+          </Grid.Column> 
         </Grid>
         
             

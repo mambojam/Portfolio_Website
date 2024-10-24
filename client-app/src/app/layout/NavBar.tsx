@@ -1,4 +1,4 @@
-import { Container, Icon, Menu } from "semantic-ui-react";
+import { Container, Icon, Menu, } from "semantic-ui-react";
 
 interface Props {
     scrollToHome: () => void;
@@ -12,16 +12,23 @@ export default function NavBar({scrollToHome, scrollToAbout, scrollToContact, sc
         <Container>
             <Menu.Item header onClick={scrollToHome}>
                 {/* <img src="/assets/logo.png" alt="ProjectsLogo" /> */}
-                <Icon name='user' size='large'/>
-                Harry Jacobs
+                <img src="/letter-h.png" />
+                
             </Menu.Item>
+           
             <Menu.Item name='About' onClick={scrollToAbout} />
             <Menu.Item name='Projects' onClick={scrollToProjects}/>
             <Menu.Item name='Contact' onClick={scrollToContact} /> 
           
             <Menu.Item position="right">
-                <Icon name='github' size='large'/>
-                <Icon name='linkedin' size='large'/>
+                <a href="https://github.com/mambojam">
+                    <Icon name='github' size='large'/>
+                </a>
+            
+                <a href="https://www.linkedin.com/in/harry-jacobs-8546b7198/">
+                    <Icon name='linkedin' size='large'/>
+                </a>
+                
             </Menu.Item>
         </Container>   
     </Menu>

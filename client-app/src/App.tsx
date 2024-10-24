@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container } from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 import particlesConfig from "./particles-config.json"; 
 import axios from "axios";
 import ProjectsDashboard from "./features/projects/dashboard/ProjectsDashboard";
@@ -9,6 +9,7 @@ import HomePage from "./features/home/HomePage";
 import About from "./features/personal/About";
 import Contact from "./features/personal/Contact";
 import NavBar from "./app/layout/NavBar";
+import { Message } from "./app/domain/Message";
 
 function App() {
 
@@ -53,6 +54,12 @@ function App() {
     })
   }, []) //<---- empty array of dependencies means this will only execute once
 
+  function submitForm(message : Message) {
+    message.timeSubmitted = Date.now().toString();
+    console.log(message.messageDetails);
+  }
+
+
 
   if (init) {
     return (
@@ -74,10 +81,10 @@ function App() {
             <About />
           </div>
           <div id="projDiv" className="refDiv" ref={projectsRef}>
-            <ProjectsDashboard projects={projects} scrollToContact={() => scrollToSection(contactRef)} />          
+            <ProjectsDashboard projects={projects} />          
           </div>
           <div id="contactDiv" className="refDiv" ref={contactRef}>
-            <Contact scrollToHome={() => scrollToSection(homeRef)} />
+            <Contact submitForm={submitForm}/>
           </div>      
       </>
     );
