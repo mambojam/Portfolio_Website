@@ -1,0 +1,15 @@
+C:\source\repos\Portfolio\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\source\repos\Portfolio\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\source\repos\Portfolio\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\source\repos\Portfolio\Persistence\bin\Debug\net8.0\Domain.dll
+C:\source\repos\Portfolio\Persistence\bin\Debug\net8.0\Domain.pdb
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\source\repos\Portfolio\Persistence\obj\Debug\net8.0\ref\Persistence.dll

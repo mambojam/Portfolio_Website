@@ -1,0 +1,212 @@
+
+
+.ui.inverted.menu {
+  position: sticky; /* or fixed if you want it to stick to the top of the page */
+  top:0;
+  width: 100%;
+  background-color: #1F7A8C; /* Semi-transparent black */
+  z-index: 2; /* Higher than the particles (which is -1) */
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow */
+
+}  
+
+.masthead.home {
+  align-items: center;
+  height: 100vh;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  padding-top: 40vh !important;
+  margin: auto;
+  align-content: center;
+}
+.masthead {
+  padding-top: 10vh !important;
+  align-items: center;
+  height: 90vh;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+}
+.masthead .ui.menu .ui.button,
+.ui.menu a.ui.inverted.button {
+  margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+  font-size: 4em;
+  font-weight: normal;
+  color: #BFDBF7;
+}
+
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+  color: #BFDBF7;
+
+}
+
+div.refDiv {
+  padding: 0 15vw 0 15vw
+}
+
+.masthead h1.ui.header span.boldHeader {
+  color: #DB222A;
+}
+div.ui.container.btnDiv {
+  margin-top: 30vh !important;
+}
+
+div.ui.container.btnDiv button {
+  color:#BFDBF7;
+  transition: 0.5s;
+
+}
+
+div.ui.container.btnDiv :hover {
+  filter: drop-shadow(10px 10px 4px #DB222A) !important;
+  border: #1F7A8C;
+  color:#1F7A8C;
+}
+
+i.icon.arrow.down:before {
+  margin-left: 1vw !important;
+}
+
+/* div.image.logo img {
+  animation: 3s linear 1s infinite alternate slidein;
+  animation-composition: add;
+
+  animation-direction: alternate-reverse !important;
+} */
+div.image.logo img {
+  max-width: 70px !important;
+  max-height: 70px !important;
+  transition: 0.5s;
+}
+
+div.image.logo :hover {
+  filter: drop-shadow(0 10px 4px #DB222A) !important;
+}
+/* Ensure that the container behaves as expected */
+.logo-container {
+  position: relative;
+  width: 400px;   /* Adjust based on your needs */
+  height: 400px;  /* Adjust based on your needs */
+  border-radius: 50%; /* To ensure the rotation happens in a circle */
+  animation: rotate-oval 18s linear infinite;
+  margin: 0 auto; /* Center the container */
+  overflow: visible; /* Prevent clipping of the logos */
+  
+}
+
+/* Wrapper responsible for positioning logos in a circle */
+.logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 -150px; /* Adjust this based on your circle radius */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the logos inside the wrapper stay upright */
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+   
+
+}
+
+
+
+/* Position logos in a circle */
+.logo-wrapper:nth-child(1) {
+  transform: rotate(0deg) translate(150px);  
+}
+.logo-wrapper:nth-child(2) {
+  transform: rotate(-60deg) translate(150px) rotate(60deg);
+}
+.logo-wrapper:nth-child(3) {
+  transform: rotate(-120deg) translate(150px) rotate(120deg);
+}
+.logo-wrapper:nth-child(4) {
+  transform: rotate(-180deg) translate(150px)  rotate(180deg);
+}
+.logo-wrapper:nth-child(5) {
+  transform: rotate(-240deg) translate(150px) rotate(240deg);
+}
+.logo-wrapper:nth-child(6) {
+  transform: rotate(-300deg) translate(150px) rotate(300deg);
+}
+
+/* Grow */
+.logo.html {
+  animation: counter-rotate 18s linear infinite,
+  grow 18s linear infinite;
+  animation-delay: 0s , 0;
+  
+}
+.logo.net {
+  animation: counter-rotate 18s linear infinite,
+  grow 18s linear infinite;
+  animation-delay: 0s , 3s;
+}
+.logo.cs {
+  animation: counter-rotate 18s linear infinite,
+  grow 18s linear infinite;
+  animation-delay: 0s , 6s;
+}
+.logo.react {
+  animation: counter-rotate 18s linear infinite,
+  grow 18s linear infinite;
+  animation-delay: 0s, 9s;
+}
+.logo.css {
+  animation: counter-rotate 18s linear infinite,
+  grow 18s linear infinite;
+  animation-delay: 0s, 12s;
+}
+.logo.ts {
+  animation: counter-rotate 18s linear infinite,
+  grow 18s linear infinite;
+  animation-delay: 0s, 15s;
+}
+
+/* Rotate the entire container */
+@keyframes rotate-oval {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Counter-rotation to keep the logos upright */
+@keyframes counter-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 40px;
+    height: 40px;
+  }
+  50% {
+    width: 80px;
+    height: 80px;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+  }
+}

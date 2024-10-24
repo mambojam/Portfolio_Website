@@ -1,0 +1,17 @@
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Application.deps.json
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Application.dll
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Application.pdb
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Domain.dll
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Persistence.dll
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Domain.pdb
+C:\source\repos\Portfolio\Application\bin\Debug\net8.0\Persistence.pdb
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.dll
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\refint\Application.dll
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\Application.pdb
+C:\source\repos\Portfolio\Application\obj\Debug\net8.0\ref\Application.dll
