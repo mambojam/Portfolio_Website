@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\source\\repos\\Portfolio\\API\\API.csproj": {}
+    "C:\\source\\repos\\Portfolio\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\source\\repos\\Portfolio\\API\\API.csproj": {
+    "C:\\source\\repos\\Portfolio\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\source\\repos\\Portfolio\\API\\API.csproj",
+        "projectUniqueName": "C:\\source\\repos\\Portfolio\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\source\\repos\\Portfolio\\API\\API.csproj",
+        "projectPath": "C:\\source\\repos\\Portfolio\\api\\API.csproj",
         "packagesPath": "C:\\Users\\jacobsh\\.nuget\\packages\\",
-        "outputPath": "C:\\source\\repos\\Portfolio\\API\\obj\\",
+        "outputPath": "C:\\source\\repos\\Portfolio\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

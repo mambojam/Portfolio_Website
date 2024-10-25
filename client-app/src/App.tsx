@@ -9,7 +9,6 @@ import HomePage from "./features/home/HomePage";
 import About from "./features/personal/About";
 import Contact from "./features/personal/Contact";
 import NavBar from "./app/layout/NavBar";
-import { Message } from "./app/domain/Message";
 
 function App() {
 
@@ -33,16 +32,15 @@ function App() {
     () => particlesConfig, []);
 
   // Navigation
-  // Create refs for each section component
-  const homeRef = useRef<HTMLDivElement>(null);
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
+  // Create refs for each section component   // I WANT TO FIX THIS TO PASS THE REFS DIRECTLY TO COMPONENTS
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
-   // Function to handle smooth scrolling
-   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+  const scrollToSection = <T extends HTMLElement>(ref: React.RefObject<T>) => { 
     ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+};
 
   // Projects
   const [projects, setProjects] = useState([]);
@@ -54,12 +52,6 @@ function App() {
     })
   }, []) //<---- empty array of dependencies means this will only execute once
 
-  function submitForm(message : Message) {
-    message.timeSubmitted = Date.now().toString();
-    console.log(message.messageDetails);
-  }
-
-
 
   if (init) {
     return (
@@ -69,6 +61,7 @@ function App() {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options} />
+        
         <div id="homeDiv" className="refDiv" ref={homeRef} >
         <HomePage scrollToAbout={() => scrollToSection(aboutRef)}/>
         </div>
@@ -78,13 +71,15 @@ function App() {
           scrollToProjects={() => scrollToSection(projectsRef)} 
           scrollToContact={() => scrollToSection(contactRef)}/>
           <div id="aboutDiv" className="refDiv" ref={aboutRef}>
-            <About />
+            <About />          
           </div>
+            
+         
           <div id="projDiv" className="refDiv" ref={projectsRef}>
             <ProjectsDashboard projects={projects} />          
           </div>
           <div id="contactDiv" className="refDiv" ref={contactRef}>
-            <Contact submitForm={submitForm}/>
+            <Contact/>
           </div>      
       </>
     );

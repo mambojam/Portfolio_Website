@@ -2,10 +2,11 @@ import { Container, Grid,  Header,  Icon } from "semantic-ui-react";
 
 
 export default function About() {
+  
+  
+  
   return (
-   
-    
-        
+
         <Grid   className="masthead">
           <Grid.Row >
           <Header as='h1'  className="pageHeader">About</Header>

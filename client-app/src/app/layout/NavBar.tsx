@@ -20,12 +20,12 @@ export default function NavBar({scrollToHome, scrollToAbout, scrollToContact, sc
             <Menu.Item name='Projects' onClick={scrollToProjects}/>
             <Menu.Item name='Contact' onClick={scrollToContact} /> 
           
-            <Menu.Item position="right">
-                <a href="https://github.com/mambojam">
+            <Menu.Item position="right" >
+                <a href="https://github.com/mambojam" className="socialsIconLink">
                     <Icon name='github' size='large'/>
                 </a>
             
-                <a href="https://www.linkedin.com/in/harry-jacobs-8546b7198/">
+                <a href="https://www.linkedin.com/in/harry-jacobs-8546b7198/" className="socialsIconLink">
                     <Icon name='linkedin' size='large'/>
                 </a>
                 
