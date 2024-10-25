@@ -307,3 +307,43 @@ div.image.logo :hover {
 }
 
 }
+
+@media (max-width:800px) {
+  
+
+/* Position logos in a circle */
+.logo-wrapper:nth-child(1) {
+  transform: rotate(0deg) translate(120px);  
+}
+.logo-wrapper:nth-child(2) {
+  transform: rotate(-60deg) translate(120px) rotate(60deg);
+}
+.logo-wrapper:nth-child(3) {
+  transform: rotate(-120deg) translate(120px) rotate(120deg);
+}
+.logo-wrapper:nth-child(4) {
+  transform: rotate(-180deg) translate(120px)  rotate(180deg);
+}
+.logo-wrapper:nth-child(5) {
+  transform: rotate(-240deg) translate(120px) rotate(240deg);
+}
+.logo-wrapper:nth-child(6) {
+  transform: rotate(-300deg) translate(120px) rotate(300deg);
+}
+
+@keyframes grow {
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+  50% {
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+}
