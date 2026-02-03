@@ -7,15 +7,15 @@ export default function About() {
   
   return (
 
-        <Grid   className="masthead">
+        <Grid   className="masthead" stackable>
           <Grid.Row >
           <Header as='h1'  className="pageHeader">About</Header>
           </Grid.Row>
-          <Grid.Column width='6'>
+          <Grid.Column className='aboutColumn' width='6'>
           
               <Icon inverted name='user' size='massive'/>
               <p style={{color:'white'}} >
-              Hey, I'm Harry! Welcome and thank you for visiting my site!
+              Welcome and thank you for visiting my site!
               I'm a full stack web developer from Cardiff, currently working in Application Support on a placement year
               as part of my MSc Computing at Cardiff University. 
               I'm passionate about problem-solving and continuous personal development with the mindset that,
@@ -25,7 +25,7 @@ export default function About() {
             
             
           </Grid.Column>
-          <Grid.Column width='10'>           
+          <Grid.Column className='tecLogoColumn' width='10'>           
             <Container className='logo-container'>
               <div className="logo-wrapper">
                 <img className="logo html" src="/stackLogos/HTML5.svg"/>

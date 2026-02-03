@@ -12,9 +12,8 @@ import NavBar from "./app/layout/NavBar";
 
 function App() {
 
-  // Background
   const [init, setInit] = useState(false);
-  // this should be run only once per application lifetime
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       

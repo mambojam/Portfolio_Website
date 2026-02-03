@@ -41,15 +41,15 @@ export default function Contact() {
     });
 };
   return (
-    <Grid l className="masthead">
+    <Grid className="masthead" stackable>
       <Grid.Row>
       <Header as='h1' inverted className="pageHeader">Contact</Header>
 
       </Grid.Row>
       <Grid.Column  width='6'>
       <p  >
-        I'd love to hear from visitors their thoughts on the site, particularly from other developers. So please feel free to provide some feedback for me!
-        If you have any questions you'd like to ask about the site, any of my projects or anything else, please do get in touch here or reach out to me on <a href="https://www.linkedin.com/in/harry-jacobs-8546b7198/">LinkedIn</a>.
+        I'd love to hear your thoughts on the site, feel free to provide some feedback for me!
+        If you have any questions you'd like to ask about the site, any of my projects or anything else, please get in touch here or reach out to me on <a href="https://www.linkedin.com/in/harry-jacobs-8546b7198/">LinkedIn</a>.
         You can also follow me and keep up-to-date with ongoing projects via my <a href="https://github.com/mambojam">GitHub</a> account.
       </p>
       </Grid.Column>

@@ -15,39 +15,37 @@ namespace Persistence
             {
                 new Project
                 {
-                    Title = "Early Portfolio",
-                    Description = "First web project creating a personal portfolio",
+                    Title = "Allez",
+                    Description = "A social media app for climbers who want to share their achievements with friends and track their progress",
                     Category = "Web Development",
                     TechStack = [
-                        "Python",
-                        "JavaScript",
-                        "Sqlite",
-                        "HTML",
-                        "CSS"
+                        "ASP.NET",
+                        "TypeScript",
+                        "React"
                     ],
-                    Url = "https://github.com/mambojam/Personal-Digtial-Portfolio-2",
+                    Url = "https://github.com/mambojam/Allez",
                     DateCreated = DateTime.UtcNow.AddMonths(-9)
                 },
 
                 new Project
                 {
-                    Title = "PyGame Space Invader",
-                    Description = "First game development project created a simple Pong game using PyGame",
-                    Category = "Game Development",
-                    TechStack = ["Python"],
+                    Title = "Card Guesser",
+                    Description = "A web based game where players try to guess the identity of an unknown Magic The Gathering card. As players make correct guesses about different features of the card, the image of the card is revealed",
+                    Category = "Web Game Development",
+                    TechStack = ["React"],
                     Url = "https://github.com/mambojam/PyGame-Project",
                     DateCreated = DateTime.UtcNow.AddMonths(-13)
                 },
 
-                new Project
-                {
-                    Title = "Java To-Do",
-                    Description = "A todo list console application written in Java that uses simple data structures to manage users and their lists",
-                    Category = "Console Application",
-                    TechStack = ["Java"],
-                    Url = "https://github.com/mambojam/java-to-do",
-                    DateCreated = DateTime.UtcNow.AddMonths(-8)
-                }         
+                // new Project
+                // {
+                //     Title = "Java To-Do",
+                //     Description = "A todo list console application written in Java that uses simple data structures to manage users and their lists",
+                //     Category = "Console Application",
+                //     TechStack = ["Java"],
+                //     Url = "https://github.com/mambojam/java-to-do",
+                //     DateCreated = DateTime.UtcNow.AddMonths(-8)
+                // }         
             };
             
             await context.Projects.AddRangeAsync(projects);

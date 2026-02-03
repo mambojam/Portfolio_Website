@@ -7,7 +7,7 @@
   background-color: #1F7A8C; /* Semi-transparent black */
   z-index: 2; /* Higher than the particles (which is -1) */
   padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 
 }  
 
@@ -130,24 +130,23 @@ div.image.logo img {
 div.image.logo :hover {
   filter: drop-shadow(0 10px 4px #DB222A) !important;
 }
-/* Ensure that the container behaves as expected */
+
 .logo-container {
   position: relative;
-  width: 400px;   /* Adjust based on your needs */
-  height: 400px;  /* Adjust based on your needs */
-  border-radius: 50%; /* To ensure the rotation happens in a circle */
+  width: 400px;   
+  height: 400px;  
+  border-radius: 50%; 
   animation: rotate-oval 18s linear infinite;
-  margin: 0 auto; /* Center the container */
-  overflow: visible; /* Prevent clipping of the logos */
+  margin: 0 auto; 
+  overflow: visible; 
   
 }
 
-/* Wrapper responsible for positioning logos in a circle */
 .logo-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: 0 -150px; /* Adjust this based on your circle radius */
+  transform-origin: 0 -150px; 
   width: 40px;
   height: 40px;
   display: flex;
@@ -155,7 +154,6 @@ div.image.logo :hover {
   align-items: center;
 }
 
-/* Ensure the logos inside the wrapper stay upright */
 .logo {
   width: 40px;
   height: 40px;
@@ -164,7 +162,6 @@ div.image.logo :hover {
 
 }
 
-/* Position logos in a circle */
 .logo-wrapper:nth-child(1) {
   transform: rotate(0deg) translate(150px);  
 }
@@ -189,7 +186,7 @@ div.image.logo :hover {
   animation: counter-rotate 18s linear infinite,
   grow 18s linear infinite;
   animation-delay: 0s , 0;
-  
+
 }
 .logo.net {
   animation: counter-rotate 18s linear infinite,
@@ -311,26 +308,6 @@ div.image.logo :hover {
 @media (max-width:800px) {
   
 
-/* Position logos in a circle */
-.logo-wrapper:nth-child(1) {
-  transform: rotate(0deg) translate(120px);  
-}
-.logo-wrapper:nth-child(2) {
-  transform: rotate(-60deg) translate(120px) rotate(60deg);
-}
-.logo-wrapper:nth-child(3) {
-  transform: rotate(-120deg) translate(120px) rotate(120deg);
-}
-.logo-wrapper:nth-child(4) {
-  transform: rotate(-180deg) translate(120px)  rotate(180deg);
-}
-.logo-wrapper:nth-child(5) {
-  transform: rotate(-240deg) translate(120px) rotate(240deg);
-}
-.logo-wrapper:nth-child(6) {
-  transform: rotate(-300deg) translate(120px) rotate(300deg);
-}
-
 @keyframes grow {
   0% {
     width: 30px;
@@ -345,5 +322,7 @@ div.image.logo :hover {
     height: 30px;
   }
 }
+
+
 
 }

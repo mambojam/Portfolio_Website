@@ -11,7 +11,7 @@ export default function HomePage({scrollToAbout}:Props) {
           {/* <Icon name='user' size='massive' style={{marginBottom: 12, marginRight: 10}} /> */}
             Hey there! I'm <span className="boldHeader">Harry</span>         
         </Header>
-        <Header as='h2' inverted content="I'm a Full-Stack Web Developer, based in Cardiff" />
+        <Header as='h2' inverted content="I'm a Software Developer, based in Cardiff" />
         
         </Container>
         <Container className="btnDiv">
