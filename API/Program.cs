@@ -36,7 +36,11 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseDefaultFiles(); // looks for index.html in wwwroot
+app.UseStaticFiles(); // uses the content in the wwwroot subfolder
+
 app.MapControllers();
+app.MapFallbackToController("Index", "Fallback"); // sets the fallback controller which will search the wwwroot for client side routes
 
 
 using var scope = app.Services.CreateScope();

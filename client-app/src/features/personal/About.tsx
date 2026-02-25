@@ -16,8 +16,7 @@ export default function About() {
               <Icon inverted name='user' size='massive'/>
               <p style={{color:'white'}} >
               Welcome and thank you for visiting my site!
-              I'm a full stack web developer from Cardiff, currently working in Application Support on a placement year
-              as part of my MSc Computing at Cardiff University. 
+              I'm a Full-Stack Dev from Cardiff, currently working in Accounting, building web and console apps, mostly in .Net with some React and other tools. 
               I'm passionate about problem-solving and continuous personal development with the mindset that,
               there's always moe to learn and ways to improve. I like to apply that philosophy in both my personal and 
               professional life, mentally and physically

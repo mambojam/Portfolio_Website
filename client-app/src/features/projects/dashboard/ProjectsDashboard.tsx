@@ -12,7 +12,7 @@ export default function ProjectsDashboard({projects} : Props) {
         <Grid.Row >
         <Header as='h1' inverted className="pageHeader">Projects</Header>
         </Grid.Row>
-        <Grid.Column  width='6'>
+        <Grid.Column  width='8'>
 
         <List>
             {projects.map((project : Project) => (
@@ -20,6 +20,8 @@ export default function ProjectsDashboard({projects} : Props) {
                     {project.title}
                 </List.Item>
                 ))}
+
+                <List.Item as='h2'>...Details Coming Soon!!</List.Item>
         </List>
 
         
