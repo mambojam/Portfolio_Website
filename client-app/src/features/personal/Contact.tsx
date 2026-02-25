@@ -22,8 +22,10 @@ export default function Contact() {
 
   const sendEmail = () => {
     emailjs
-      .send(import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+
       {
         contactName: message.contactName,
         contactDetails: message.contactDetails,
@@ -62,7 +64,7 @@ export default function Contact() {
         <Form.TextArea name='messageDetails' placeholder='Please write me a message or ask me a question here..' onChange={handleInputChange} />
         
         <Button floated='right' positive type='submit' content='Submit' />
-        <Button to='/activities' negative floated='right' type='button' content='Clear' />
+        <Button to='/' negative floated='right' type='button' content='Clear' />
     </Form>
       </Grid.Column>
     </Grid>

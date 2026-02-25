@@ -27,7 +27,7 @@ function App() {
     console.log(container);
   };
 
-  const options = useMemo(
+  const options : any = useMemo(
     () => particlesConfig, []);
 
   // Navigation
@@ -44,8 +44,9 @@ function App() {
   // Projects
   const [projects, setProjects] = useState([]);
 
+
   useEffect(() => {
-    axios.get("http://localhost:5000/api/projects")
+    axios.get(`${import.meta.env.VITE_BASE_URL}/projects`)
     .then(response => {
       setProjects(response.data)
     })
